@@ -1,0 +1,79 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 18px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px
+}
+
+input, label {
+  display: block;
+  width: 100%;
+}
+
+input:focus {
+  outline-color: dodgerblue;
+}
+
+input:invalid {
+  outline-color: red;
+  border: 1px solid red;
+  border-radius: 2px;
+}
+
+input:valid {
+  border: 1px solid lawngreen;
+  border-radius: 2px;
+}
+
+.username_error, .email_error, .password_error {
+  margin-top: 5px;
+
+  display: none;
+  font-weight: bold;
+  color: red;
+}
+
+#password:invalid ~ .password_error,
+#email:invalid ~ .email_error,
+#username:invalid ~ .username_error {
+  display: block;
+}
+
+input {
+  padding: 10px 5px;
+}
+
+button {
+  padding: 10px 0;
+
+  width: 160px;
+  background: dodgerblue;
+
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-size: 14px;
+  color: #fff;
+}
