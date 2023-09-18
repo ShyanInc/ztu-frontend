@@ -43,7 +43,7 @@ const longestStreakRowIndex = findLongestStreakRowIndex(matrix);
 
 for (let el of matrix) {
     for (let i = 0; i < el.length; i++) {
-        if (el[i] > 1) positiveNumbersCount++;
+        if (el[i] > 0) positiveNumbersCount++;
     }
 }
 
