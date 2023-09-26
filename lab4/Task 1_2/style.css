@@ -1,0 +1,32 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  width: 140px;
+  display: inline-flex;
+}
+
+.input_block {
+  display: flex;
+  gap: 25px;
+}
+
+.select_label {
+  width: 160px;
+  vertical-align: top;
+}
+
+.answer_label {
+  width: auto;
+}
+
+.checkbox_label {
+  width: auto;
+}
+
+.form_buttons {
+  margin-left: 160px;
+}

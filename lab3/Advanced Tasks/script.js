@@ -6,7 +6,7 @@ const matrix = [
 ];
 
 
-// Task 1
+// Task 1_1
 function findMaxDiagonalSum(matrix) {
     const numRows = matrix.length;
     const numCols = matrix[0].length;
