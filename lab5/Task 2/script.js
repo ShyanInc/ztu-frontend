@@ -16,4 +16,3 @@ checkboxes.forEach(el => {
         div.innerHTML = emails.join('; ')
     })
 })
-
