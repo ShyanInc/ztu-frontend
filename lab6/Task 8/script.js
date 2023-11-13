@@ -1,13 +1,13 @@
-const books = document.querySelectorAll(".book");
+    const books = document.querySelectorAll(".book");
 
-books.forEach((book) => {
-    book.addEventListener("click", () => {
-        const isGreen = book.style.backgroundColor === "lightgreen";
+    books.forEach((book) => {
+        book.addEventListener("click", () => {
+            const isGreen = book.style.backgroundColor === "lightgreen";
 
-        books.forEach((otherBook) => {
-            otherBook.style.backgroundColor = "#FFFFFF";
+            books.forEach((otherBook) => {
+                otherBook.style.backgroundColor = "#FFFFFF";
+            });
+
+            book.style.backgroundColor = isGreen ? "#FFFFFF" : "lightgreen";
         });
-
-        book.style.backgroundColor = isGreen ? "#FFFFFF" : "lightgreen";
     });
-});
