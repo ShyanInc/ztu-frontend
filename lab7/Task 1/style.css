@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  border: 6px solid dodgerblue;
+  position: relative;
+}
+
+.square {
+  box-sizing: border-box;
+  position: absolute;
+  cursor: pointer;
+  border: 1px solid black;
+}
