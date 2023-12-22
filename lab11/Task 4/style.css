@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+#info {
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#timer {
+  padding: 6px;
+  color: white;
+  position: absolute;
+  background-color: green;
+  border-radius: 10px;
+}
+
+#position {
+  right: 5%;
+  color: dodgerblue;
+  position: absolute;
+}
+
+#container {
+  width: 100% !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+#container:fullscreen {
+  background-color: rgb(141, 179, 189);
+}
+
+#closeScreen {
+  top: 45%;
+  left: 45%;
+  display: none;
+  padding: 10px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+  border: 3px solid dodgerblue;
+  border-radius: 10px;
+  background-color: dodgerblue;
+}
